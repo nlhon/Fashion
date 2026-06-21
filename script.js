@@ -45,23 +45,35 @@
   }
 
   /* --- Gallery tiles --- */
-  var gallery = document.getElementById("gallery");
+  var gallery = document.getElementById("galleryGrid");
   if (gallery) {
+    // Real fashion photography (Unsplash). Each tile keeps a blue/yellow
+    // gradient as a graceful fallback if an image can't load.
+    var IMG = "?auto=format&fit=crop&w=600&h=800&q=70";
     var tiles = [
-      { label: "Sculptural Trench", c1: "#c084fc", c2: "#7dd3fc" },
-      { label: "Neo-Heritage Knit", c1: "#e8b4c8", c2: "#e9c46a" },
-      { label: "Liquid Eveningwear", c1: "#7dd3fc", c2: "#1d2b4a" },
-      { label: "Utility Tailoring", c1: "#7d8597", c2: "#2a2438" },
-      { label: "Bloom Print Capsule", c1: "#e8b4c8", c2: "#c084fc" },
-      { label: "Chrome Streetwear", c1: "#9aa0a6", c2: "#3a3550" },
-      { label: "Soft Avant Drape", c1: "#e9c46a", c2: "#e8b4c8" },
-      { label: "Cyber Atelier", c1: "#7dd3fc", c2: "#c084fc" }
+      { label: "Sculptural Tailoring", id: "1490481651871-ab68de25d43d", c1: "#3b82f6", c2: "#0a1326" },
+      { label: "Editorial Knitwear",   id: "1483985988355-763728e1935b", c1: "#ffd23f", c2: "#3b82f6" },
+      { label: "Evening Drape",        id: "1539109136881-3be0616acf4b", c1: "#60a5fa", c2: "#0a1326" },
+      { label: "Street Layering",      id: "1469334031218-e382a71b716b", c1: "#1e3a8a", c2: "#3b82f6" },
+      { label: "Studio Portrait",      id: "1496747611176-843222e1e57c", c1: "#ffd23f", c2: "#1e3a8a" },
+      { label: "Minimal Lines",        id: "1485462537746-965f33f7f6a7", c1: "#3b82f6", c2: "#60a5fa" },
+      { label: "Texture & Form",       id: "1515886657613-9f3515b0c78f", c1: "#ffe071", c2: "#3b82f6" },
+      { label: "Runway Moment",        id: "1487412720507-e7ab37603c6f", c1: "#60a5fa", c2: "#0a1326" }
     ];
     tiles.forEach(function (t) {
       var div = document.createElement("div");
       div.className = "tile";
       div.style.background = "linear-gradient(150deg, " + t.c1 + ", " + t.c2 + ")";
-      div.innerHTML = "<span>" + t.label + "</span>";
+      var img = document.createElement("img");
+      img.loading = "lazy";
+      img.alt = t.label + " — fashion concept";
+      img.src = "https://images.unsplash.com/photo-" + t.id + IMG;
+      // If the photo fails to load, hide it so the gradient shows through.
+      img.addEventListener("error", function () { img.remove(); });
+      div.appendChild(img);
+      var span = document.createElement("span");
+      span.textContent = t.label;
+      div.appendChild(span);
       gallery.appendChild(div);
     });
   }

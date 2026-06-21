@@ -1,0 +1,8 @@
+# Dependencies
+node_modules/
+package.json
+package-lock.json
+
+# Screenshot / build artifacts
+shots/
+shot*.js

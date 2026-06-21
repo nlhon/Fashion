@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Atelier AI — the creative intelligence platform for fashion designers. Generate designs, forecast trends, build moodboards, and bring collections to life with AI." />
+  <title>Atelier AI — Where Fashion Meets Artificial Intelligence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✦</text></svg>" />
+</head>
+<body>
+  <!-- ===== Navigation ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__brand">
+        <span class="nav__mark">✦</span> Atelier<span class="nav__brand-accent">AI</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#features">Platform</a>
+        <a href="#studio">Studio</a>
+        <a href="#how">How it works</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="#studio" class="btn btn--ghost">Try the Studio</a>
+        <a href="#pricing" class="btn btn--primary">Get started</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="orb orb--1"></div>
+        <div class="orb orb--2"></div>
+        <div class="orb orb--3"></div>
+      </div>
+      <div class="hero__inner">
+        <span class="pill">✦ The creative intelligence platform for fashion</span>
+        <h1 class="hero__title">
+          Design the future of fashion,<br /><em>powered by AI.</em>
+        </h1>
+        <p class="hero__lede">
+          Atelier AI gives designers, brands, and emerging creatives a complete
+          studio to imagine garments, forecast trends, build moodboards, and turn
+          a single idea into a full collection — in minutes, not months.
+        </p>
+        <div class="hero__cta">
+          <a href="#studio" class="btn btn--primary btn--lg">Start creating free</a>
+          <a href="#how" class="btn btn--ghost btn--lg">See how it works →</a>
+        </div>
+        <ul class="hero__stats">
+          <li><strong>40k+</strong><span>designs generated</span></li>
+          <li><strong>120+</strong><span>brands & studios</span></li>
+          <li><strong>4.9/5</strong><span>creator rating</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Logo strip ===== -->
+    <section class="marquee" aria-label="Trusted by">
+      <p class="marquee__label">Trusted by forward-thinking studios & independent designers</p>
+      <div class="marquee__row">
+        <span>MAISON NOVA</span><span>ÉCLAT</span><span>Studio Lumen</span><span>THREADWORKS</span>
+        <span>Bias &amp; Grain</span><span>ATELIER 7</span><span>Velvet Index</span><span>NORTHCUT</span>
+      </div>
+    </section>
+
+    <!-- ===== Features ===== -->
+    <section class="section" id="features">
+      <div class="section__head">
+        <span class="eyebrow">The platform</span>
+        <h2>Everything a modern fashion creative needs</h2>
+        <p>One workspace for the whole creative journey — from first spark of inspiration to a production-ready tech pack.</p>
+      </div>
+      <div class="grid grid--features">
+        <article class="card">
+          <div class="card__icon">✶</div>
+          <h3>AI Design Generation</h3>
+          <p>Describe a garment in plain language and generate dozens of original concepts, silhouettes, and colorways instantly.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">◴</div>
+          <h3>Trend Forecasting</h3>
+          <p>Stay ahead with AI that analyzes runway, retail, and social signals to surface the colors, fabrics, and shapes that are rising.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">⊞</div>
+          <h3>Smart Moodboards</h3>
+          <p>Curate cohesive moodboards in seconds. The AI suggests palettes, textures, and references that match your vision.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">⟡</div>
+          <h3>Virtual Try-On</h3>
+          <p>Preview your designs on diverse, photorealistic models without a single sample or photoshoot.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">▦</div>
+          <h3>Tech Pack Assist</h3>
+          <p>Turn finished concepts into structured tech packs with measurements, materials, and construction notes.</p>
+        </article>
+        <article class="card">
+          <div class="card__icon">❈</div>
+          <h3>Pattern &amp; Print Lab</h3>
+          <p>Generate seamless prints, jacquards, and embroidery motifs that are uniquely yours and ready to repeat.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Interactive Studio Demo ===== -->
+    <section class="section section--studio" id="studio">
+      <div class="section__head">
+        <span class="eyebrow">The studio</span>
+        <h2>Try the design generator</h2>
+        <p>Describe what you want to create. Choose a vibe. Watch a concept brief come to life. <em>(Live demo — no account needed.)</em></p>
+      </div>
+
+      <div class="studio">
+        <div class="studio__panel">
+          <label class="studio__label" for="promptInput">Describe your garment or collection</label>
+          <textarea id="promptInput" class="studio__input" rows="3" placeholder="e.g. A minimalist trench coat in recycled wool with sculptural shoulders"></textarea>
+
+          <span class="studio__label">Choose an aesthetic</span>
+          <div class="chips" id="vibeChips">
+            <button class="chip is-active" data-vibe="Avant-garde">Avant-garde</button>
+            <button class="chip" data-vibe="Minimalist">Minimalist</button>
+            <button class="chip" data-vibe="Streetwear">Streetwear</button>
+            <button class="chip" data-vibe="Romantic">Romantic</button>
+            <button class="chip" data-vibe="Futuristic">Futuristic</button>
+            <button class="chip" data-vibe="Heritage">Heritage</button>
+          </div>
+
+          <button class="btn btn--primary btn--lg btn--block" id="generateBtn">
+            ✦ Generate concept
+          </button>
+          <p class="studio__hint">This demo runs entirely in your browser to showcase the experience.</p>
+        </div>
+
+        <div class="studio__output" id="studioOutput" aria-live="polite">
+          <div class="studio__placeholder" id="studioPlaceholder">
+            <div class="studio__placeholder-art">✦</div>
+            <p>Your AI concept brief will appear here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== How it works ===== -->
+    <section class="section" id="how">
+      <div class="section__head">
+        <span class="eyebrow">How it works</span>
+        <h2>From idea to collection in four steps</h2>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <span class="step__num">01</span>
+          <h3>Describe your vision</h3>
+          <p>Write a prompt, upload a sketch, or pick a starting point from the trend library.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">02</span>
+          <h3>Generate &amp; explore</h3>
+          <p>Get a wave of original concepts. Iterate on the ones you love with simple natural-language edits.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">03</span>
+          <h3>Refine &amp; visualize</h3>
+          <p>Adjust palettes, fabrics, and fits. Preview on virtual models and assemble your moodboard.</p>
+        </li>
+        <li class="step">
+          <span class="step__num">04</span>
+          <h3>Export &amp; produce</h3>
+          <p>Download tech packs, prints, and lookbooks ready to share with your team or manufacturer.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ===== Gallery ===== -->
+    <section class="section section--alt" id="gallery">
+      <div class="section__head">
+        <span class="eyebrow">Gallery</span>
+        <h2>Made with Atelier AI</h2>
+        <p>A glimpse of concepts dreamed up by our community of designers.</p>
+      </div>
+      <div class="gallery" id="gallery">
+        <!-- tiles injected by JS -->
+      </div>
+    </section>
+
+    <!-- ===== Testimonials ===== -->
+    <section class="section" id="voices">
+      <div class="section__head">
+        <span class="eyebrow">Loved by creators</span>
+        <h2>What designers are saying</h2>
+      </div>
+      <div class="grid grid--quotes">
+        <figure class="quote">
+          <blockquote>"It compressed weeks of early ideation into an afternoon. I now show clients three full directions before lunch."</blockquote>
+          <figcaption><strong>Maya Okonkwo</strong><span>Founder, Studio Lumen</span></figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>"The trend forecasting is uncanny. We caught the oversized-knit wave a full season early thanks to Atelier."</blockquote>
+          <figcaption><strong>Daniel Reyes</strong><span>Design Lead, Threadworks</span></figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>"As a solo designer this is like having an entire studio team. The tech pack assist alone is worth it."</blockquote>
+          <figcaption><strong>Priya Nair</strong><span>Independent Designer</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Pricing ===== -->
+    <section class="section section--alt" id="pricing">
+      <div class="section__head">
+        <span class="eyebrow">Pricing</span>
+        <h2>Start free. Scale when you're ready.</h2>
+        <p>No credit card required to begin creating.</p>
+      </div>
+      <div class="grid grid--pricing">
+        <article class="price">
+          <h3>Sketch</h3>
+          <p class="price__amt">$0<span>/mo</span></p>
+          <p class="price__desc">For exploring the platform.</p>
+          <ul>
+            <li>50 generations / month</li>
+            <li>Basic moodboards</li>
+            <li>Trend digest (weekly)</li>
+            <li>Community gallery</li>
+          </ul>
+          <a href="#studio" class="btn btn--ghost btn--block">Get started</a>
+        </article>
+        <article class="price price--featured">
+          <span class="price__badge">Most popular</span>
+          <h3>Studio</h3>
+          <p class="price__amt">$29<span>/mo</span></p>
+          <p class="price__desc">For working designers & small brands.</p>
+          <ul>
+            <li>Unlimited generations</li>
+            <li>Virtual try-on</li>
+            <li>Tech pack assist</li>
+            <li>Print &amp; pattern lab</li>
+            <li>Live trend forecasting</li>
+          </ul>
+          <a href="#studio" class="btn btn--primary btn--block">Start free trial</a>
+        </article>
+        <article class="price">
+          <h3>Maison</h3>
+          <p class="price__amt">Custom</p>
+          <p class="price__desc">For teams & established houses.</p>
+          <ul>
+            <li>Everything in Studio</li>
+            <li>Team workspaces</li>
+            <li>Brand-trained models</li>
+            <li>Priority support &amp; API</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost btn--block">Talk to us</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta" id="contact">
+      <div class="cta__inner">
+        <h2>Bring your next collection to life.</h2>
+        <p>Join thousands of designers building the future of fashion with AI.</p>
+        <form class="cta__form" id="signupForm">
+          <input type="email" id="emailInput" placeholder="you@studio.com" aria-label="Email address" required />
+          <button type="submit" class="btn btn--primary btn--lg">Get early access</button>
+        </form>
+        <p class="cta__note" id="formNote"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="#top" class="nav__brand"><span class="nav__mark">✦</span> Atelier<span class="nav__brand-accent">AI</span></a>
+        <p>The creative intelligence platform for fashion.</p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h4>Platform</h4>
+          <a href="#features">Features</a>
+          <a href="#studio">Studio</a>
+          <a href="#pricing">Pricing</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="#voices">Customers</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="#how">How it works</a>
+          <a href="#features">Trend reports</a>
+          <a href="#contact">Support</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <p>© <span id="year"></span> Atelier AI. Designed for the future of fashion.</p>
+      <p>Made with creativity &amp; code.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

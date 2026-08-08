@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subscribe | 80/20 AI</title>
+  <meta name="description" content="The top 20% of AI that matters — delivered daily in a 3-minute read. Join 90,000+ researchers, engineers, and builders." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Subscribe | 80/20 AI" />
+  <meta property="og:description" content="The top 20% of AI that matters, delivered daily. Free 3-minute read for 90,000+ AI professionals." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===================== Header ===================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="80/20 AI home">
+        <span class="brand-mark" aria-hidden="true">80<span class="brand-slash">/</span>20</span>
+        <span class="brand-name">AI</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#latest">Latest</a>
+        <a href="#about">About</a>
+        <a href="#archive">Archive</a>
+        <a href="#sponsor">Sponsor</a>
+      </nav>
+      <a class="btn btn-ghost header-cta" href="#subscribe">Subscribe</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== Hero / Subscribe ===================== -->
+    <section class="hero" id="subscribe">
+      <div class="container hero-inner">
+        <span class="pill">
+          <span class="pill-dot" aria-hidden="true"></span>
+          Join <strong>90,000+</strong> AI professionals
+        </span>
+
+        <h1 class="hero-title">
+          The top <span class="accent">20%</span> of AI<br />
+          that actually matters.
+        </h1>
+
+        <p class="hero-sub">
+          Every morning we read the entire AI firehose so you don't have to — then
+          send you the <strong>3-minute</strong> brief that keeps you ahead. News,
+          tools, and one actionable tip. Free, forever.
+        </p>
+
+        <!-- Subscribe form -->
+        <form class="subscribe-form" id="subscribe-form" novalidate>
+          <div class="field">
+            <label class="sr-only" for="email">Email address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              inputmode="email"
+              autocomplete="email"
+              placeholder="you@work.com"
+              required
+            />
+            <button class="btn btn-primary" type="submit" id="submit-btn">Subscribe</button>
+          </div>
+          <p class="form-note" id="form-note">
+            Free daily newsletter. No spam. Unsubscribe in one click.
+          </p>
+        </form>
+
+        <!-- Avatars + rating social proof -->
+        <div class="social-proof" aria-hidden="false">
+          <div class="avatars" aria-hidden="true">
+            <span class="avatar" style="--i:0">🧑‍💻</span>
+            <span class="avatar" style="--i:1">👩‍🔬</span>
+            <span class="avatar" style="--i:2">🧑‍🚀</span>
+            <span class="avatar" style="--i:3">👨‍💼</span>
+            <span class="avatar" style="--i:4">👩‍💻</span>
+          </div>
+          <div class="rating">
+            <span class="stars" aria-hidden="true">★★★★★</span>
+            <span class="rating-text">Loved by engineers at OpenAI, Google, Meta &amp; more</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Logo strip ===================== -->
+    <section class="logos">
+      <div class="container">
+        <p class="logos-label">Readers work at</p>
+        <ul class="logo-row">
+          <li>OpenAI</li>
+          <li>Google</li>
+          <li>Meta</li>
+          <li>NVIDIA</li>
+          <li>Amazon</li>
+          <li>Microsoft</li>
+          <li>Anthropic</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== Stats ===================== -->
+    <section class="stats" id="about">
+      <div class="container stats-grid">
+        <div class="stat">
+          <span class="stat-num">90,000+</span>
+          <span class="stat-label">Subscribers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">3 min</span>
+          <span class="stat-label">Daily read</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">Daily</span>
+          <span class="stat-label">Straight to your inbox</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">55%</span>
+          <span class="stat-label">Open rate</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== What you get ===================== -->
+    <section class="features" id="latest">
+      <div class="container">
+        <h2 class="section-title">What lands in your inbox</h2>
+        <p class="section-sub">Skimmable, useful, and never a wall of text.</p>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">📰</span>
+            <h3>The signal, not the noise</h3>
+            <p>The 20% of AI news that changes how you work — summarized so you get it in seconds.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">🛠️</span>
+            <h3>Tools worth trying</h3>
+            <p>Hand-tested AI tools and prompts you can put to work the same day.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">⚡</span>
+            <h3>One actionable tip</h3>
+            <p>A concrete way to ship faster or think sharper — every single day.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon" aria-hidden="true">😂</span>
+            <h3>A meme to end on</h3>
+            <p>Because staying current shouldn't feel like homework.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Recommendations (shown when ?recommendations=true) ===================== -->
+    <section class="recommendations" id="recommendations" hidden>
+      <div class="container">
+        <span class="pill pill-soft">One more thing</span>
+        <h2 class="section-title">Readers of 80/20 AI also love</h2>
+        <p class="section-sub">
+          Add any of these to your subscription — one click, no extra forms.
+        </p>
+
+        <ul class="rec-list" id="rec-list">
+          <li class="rec-item">
+            <label>
+              <input type="checkbox" checked data-rec="The Neuron" />
+              <span class="rec-body">
+                <span class="rec-logo" aria-hidden="true">🧠</span>
+                <span class="rec-text">
+                  <span class="rec-name">The Neuron</span>
+                  <span class="rec-desc">Your daily dose of AI, minus the hype.</span>
+                </span>
+              </span>
+              <span class="rec-check" aria-hidden="true"></span>
+            </label>
+          </li>
+          <li class="rec-item">
+            <label>
+              <input type="checkbox" checked data-rec="Superhuman AI" />
+              <span class="rec-body">
+                <span class="rec-logo" aria-hidden="true">🦾</span>
+                <span class="rec-text">
+                  <span class="rec-name">Superhuman AI</span>
+                  <span class="rec-desc">Become smarter about AI in 3 minutes a day.</span>
+                </span>
+              </span>
+              <span class="rec-check" aria-hidden="true"></span>
+            </label>
+          </li>
+          <li class="rec-item">
+            <label>
+              <input type="checkbox" data-rec="Prompt Engineering Daily" />
+              <span class="rec-body">
+                <span class="rec-logo" aria-hidden="true">✍️</span>
+                <span class="rec-text">
+                  <span class="rec-name">Prompt Engineering Daily</span>
+                  <span class="rec-desc">Master prompting with tips from the pros.</span>
+                </span>
+              </span>
+              <span class="rec-check" aria-hidden="true"></span>
+            </label>
+          </li>
+          <li class="rec-item">
+            <label>
+              <input type="checkbox" data-rec="AI Tool Report" />
+              <span class="rec-body">
+                <span class="rec-logo" aria-hidden="true">🔧</span>
+                <span class="rec-text">
+                  <span class="rec-name">AI Tool Report</span>
+                  <span class="rec-desc">The latest AI tools, straight to your inbox.</span>
+                </span>
+              </span>
+              <span class="rec-check" aria-hidden="true"></span>
+            </label>
+          </li>
+        </ul>
+
+        <div class="rec-actions">
+          <button class="btn btn-primary" id="rec-continue">Confirm &amp; finish</button>
+          <button class="btn btn-text" id="rec-skip">No thanks, just 80/20 AI</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Testimonials ===================== -->
+    <section class="testimonials" id="archive">
+      <div class="container">
+        <h2 class="section-title">Why 90,000+ keep opening it</h2>
+        <div class="quote-grid">
+          <blockquote class="quote">
+            <p>“The only AI newsletter I actually read to the end. Signal, no fluff.”</p>
+            <footer><span class="quote-name">Maya R.</span> · ML Engineer</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>“I've shipped two features off tips I found here. Worth 100x the 3 minutes.”</p>
+            <footer><span class="quote-name">David K.</span> · Founder</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p>“It's like having a friend who reads everything and texts you the good parts.”</p>
+            <footer><span class="quote-name">Priya S.</span> · Data Scientist</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== Bottom CTA ===================== -->
+    <section class="cta" id="sponsor">
+      <div class="container cta-inner">
+        <h2>Get the 20% that matters. Skip the 80% that doesn't.</h2>
+        <p>Join 90,000+ AI professionals. Free, daily, 3-minute read.</p>
+        <form class="subscribe-form subscribe-form--cta" id="subscribe-form-cta" novalidate>
+          <div class="field">
+            <label class="sr-only" for="email-cta">Email address</label>
+            <input type="email" id="email-cta" name="email" autocomplete="email" placeholder="you@work.com" required />
+            <button class="btn btn-primary" type="submit">Subscribe free</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== Footer ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand">
+          <span class="brand-mark" aria-hidden="true">80<span class="brand-slash">/</span>20</span>
+          <span class="brand-name">AI</span>
+        </span>
+        <p>The top 20% of AI that matters, delivered daily.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#latest">Latest issue</a>
+        <a href="#archive">Archive</a>
+        <a href="#about">About</a>
+        <a href="#sponsor">Sponsor</a>
+      </nav>
+      <p class="footer-legal">© <span id="year">2026</span> 80/20 AI. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== Success toast ===================== -->
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
